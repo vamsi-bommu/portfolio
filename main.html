@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Portfolio</title>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="aos.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="styleshee">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style type="text/css">
+        body{
+            overflow-x:hidden ;
+        }
+    #home {
+       background: linear-gradient(rgba(17, 36, 90, 0.8), rgba(17, 36, 90, 0.8)), url(p5.jpg);
+       min-height: 100vh;
+       background-position: center;
+       background-attachment: fixed;
+       display: flex;
+       align-items: center;
+       margin-bottom: 100px;
+    }
+    #home h1 {
+   font-weight: 700;
+}
+.icon-b{
+    border-radius: 50% !important;
+
+    height: 35px !important;
+    width: 35px !important;
+}
+#home p {
+   max-width: 550px;
+   margin: 18px auto;
+}
+.navbar {
+   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.navbar .nav-link {
+   font-size: 12px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+   color: #E93B81;
+}
+/*.navbar .nav-link a:hover{
+   color: yellow;
+}
+.navbar-nav .nav-link:active {
+   color: #E93B81;
+}*/
+.btn-brand{
+   width: 150px;
+   height: 40px;
+    background-color: #E93B81;
+   color: #fff;
+}
+.btn-brand:hover {
+   background-color: #ce2f6e;
+   color: #fff;
+}
+img {
+   width: 100%;
+}
+
+.section-intro {
+   text-align: center;
+   margin-bottom: 60px;
+}
+
+.section-intro .hline {
+   width: 120px;
+   height: 2px;
+   background-color: rgba(0, 0, 0, 0.1);
+   margin: 16px auto 0 auto;
+}
+
+.icon-box {
+   width: 60px;
+   height: 60px;
+   background-color: #E93B81;
+   color: #fff;
+   border-radius: 4px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 32px;
+   flex: none;
+}
+p{
+   text-align: justify;
+    opacity: 0.7;
+}
+.team-member {
+   background-color: #11245A;
+}
+html{
+   scroll-behavior: smooth;
+}
+}
+
+.team-member .hline {
+   width: 70px;
+   height: 2px;
+   margin: 16px auto;
+   background-color: rgba(255, 255, 255, 0.445);
+}
+
+.team-member .team-member-img img,
+.team-member .team-member-img .social-icons {
+   transition: all 0.4s ease;
+}
+
+.team-member .team-member-img {
+   position: relative;
+   overflow: hidden;
+}
+
+.team-member .team-member-img .social-icons {
+   width: 100%;
+   height: 60px;
+   background-color: #E93B81;
+   position: absolute;
+   bottom: -60px;
+   left: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+
+.team-member .team-member-img .social-icons a {
+    text-decoration: none;
+   width: 40px;
+   height: 40px;
+   /*display: flex;
+   align-items: center;
+   justify-content: center;*/
+   border: 2px solid rgba(255, 255, 255, 0.5);
+   font-size: 24px;
+   color: #fff;
+   border-radius: 100px;
+   margin-left: 4px;
+   margin-right: 4px;
+}
+
+.team-member .team-member-img .social-icons a:hover {
+   background-color: #fff;
+   color: #E93B81;
+}
+
+.team-member:hover .team-member-img .social-icons {
+   bottom: 0;
+}
+
+.team-member:hover img {
+   transform: translateY(-60px);
+}
+#clients img {
+   height: 35px;
+
+}
+#container1{
+    width: 100%;
+}
+.footer-top {
+   padding-top: 80px;
+   padding-bottom: 30px;
+}
+
+.footer-bottom {
+   padding-top: 30px;
+   padding-bottom: 30px;
+   border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer .footer-links a,
+footer .social-icons a {
+   color: #898fa1;
+}
+
+footer .social-icons a {
+   font-size: 24px;
+}
+
+footer .footer-links a {
+   display: block;
+   font-weight: 400;
+}
+
+footer .social-icons a:hover,
+footer .footer-links a:hover {
+   color: #E93B81;
+}
+h1 span{
+   animation: animate 1s linear infinite;
+}
+h1 span:nth-child(1){
+   animation-delay: 0s;
+}
+h1 span:nth-child(2){
+   animation-delay: 0.2s;
+}
+h1 span:nth-child(3){
+   animation-delay: 0.4s;
+}
+h1 span:nth-child(4){
+   animation-delay: 0.6s;
+}
+h1 span:nth-child(5){
+   animation-delay: 0.8s;
+}
+
+
+@keyframes animate{
+   0%{
+      color: #E93B81;
+      box-shadow: none;
+   }
+   100%{
+      text-shadow: 0 0 10px #fff,
+                  0 0 20px #fff,
+                  0 0 40px #fff,
+                  0 0 80px #fff,
+                  0 0 120px #fff,
+                  0 0 160px #fff;
+   }
+}
+
+.auto-input {
+  font-size: 55px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 40px #e60073, 0 0 50px #e60073, 0 0 70px #e60073;
+  }
+/*  
+  to {
+    text-shadow: 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6;
+  }*/
+}
+
+    </style>
+</head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
+    
+   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand logo-text" href="#"><h1><span>V</span><span>A</span><span>M</span><span>S</span><span>I</span></h1></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#services">Services</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#portfolio">Portfolio</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#team">Team</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#contact">Contact</a>
+             </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    
+    <section id="home" data-aos="fade-right">  
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <h1 class="text-white display-4">CREATED BY <span class="auto-input"></span></h1>
+                    <p class="text-white">
+                     I am eager to embark on a career as a Python Developer, driven by my passion for programming and the endless possibilities offered by Python.
+                    </p>
+                    <a href="#contact" class="btn btn-brand">Hire me</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section id="services" data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 section-intro" >
+                    <h1>Our Services</h1>
+                    <div class="hline"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 p-4">
+                    <div class="icon-box">
+                        <i class="bx bxs-landscape"></i>
+                    </div>
+                    <h4 class="title-sm mt-4">Python</h4>
+                </div>
+                <div class="col-lg-4 col-sm-6 p-4">
+                    <div class="icon-box">
+                        <i class="bx bxs-coffee"></i>
+                    </div>
+                    <h4 class="tile-sm mt-4">
+                        UI design
+                    </h4>
+                </div>
+                <div class="col-lg-4 col-sm-6 p-4">
+               <div class="icon-box">
+                  <i class='bx bxs-image'></i>
+               </div>
+               <h4 class="title-sm mt-4">C</h4>
+            </div>
+            <div class="col-lg-4 col-sm-6 p-4">
+               <div class="icon-box">
+                  <i class='bx bxs-check-shield'></i>
+               </div>
+               <h4 class="title-sm mt-4">C++</h4>
+            </div>
+            <div class="col-lg-4 col-sm-6 p-4">
+               <div class="icon-box">
+                  <i class='bx bx-laptop'></i>
+               </div>
+               <h4 class="title-sm mt-4">Web Designing</h4>
+            </div>
+            <div class="col-lg-4 col-sm-6 p-4">
+               <div class="icon-box">
+                  <i class='bx bxs-happy-heart-eyes'></i>
+               </div>
+               <h4 class="title-sm mt-4">Java</h4>
+            </div>
+            </div>
+        </div>
+    </section>
+
+      
+   <div id="portfolio" data-aos="fade-up-left" class="carousel slide container" data-bs-ride="carousel" data-bs-interval="1000">
+      <div class="col-12 section-intro mt-5" >
+         <h1>Portfolio</h1>
+           <div class="hline"></div>
+      </div>
+     <div class="carousel-inner">
+       <div class="carousel-item active">
+         <img src="p1.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+       </div>
+       <div class="carousel-item">
+         <img src="p2.jpg" alt="Chicago" class="d-block" style="width:100%">
+       </div>
+       <div class="carousel-item">
+         <img src="p3.jpg" alt="New York" class="d-block" style="width:100%">
+       </div>
+   </div>
+</div>
+  
+<!--    <div id="portfolio">
+      <div class="row">
+         <div class="col-4"><img src="my1.jpeg"></div>
+         <div class="col-8"><img src="p1.jpg"></div>
+      </div>
+      <div class="row">
+         <div class="col-8"><img src="p2.jpg"></div>
+         <div class="col-4"><img src="mouli.jpg"></div>
+      </div>
+   </div> -->
+
+
+   <!--
+    team-->
+   <section id="team" class="row g-0 py-0 text-center" data-aos="zoom-out-left">
+      
+       <div class="row">
+            <div class="col-12 section-intro">
+               <h1 class="mt-5">Our Team</h1>
+               <div class="hline"></div>
+            </div>
+      </div>
+         <div class="col-sm-4 col-md-4 col-lg-4">
+        </div>
+      <div class="col-sm-4 col-md-4 col-lg-4 team-member">
+         <div class="team-member-img">
+            <img src="my_1.jpg" alt="">
+            <div class="social-icons">
+               <a href="#"><i class="bx bxl-facebook"></i></a>
+               <a href="#"><i class="bx bxl-twitter"></i></a>
+               <a href="#"><i class="bx bxl-instagram"></i></a>
+               <a href="#"><i class="bx bxl-github"></i></a>
+            </div>
+         </div>
+         
+         <div class="p-4">
+            <h5 class="title-sm mt-3 mb-0 text-white">Vamsi</h5>
+            <small class="text-white">Web Designer</small>
+            <div class="hline"></div>
+            <p class="text-white">Well skillful lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</p>
+         </div>
+      </div>
+   </section>
+
+
+   <section id="contact" data-aos="fade-up">
+    <div class="row">
+            <div class="col-12 section-intro mt-5" >
+                    <h1>Contact</h1>
+                    <div class="hline"></div>
+                </div>
+            </div>
+      <div class="container">
+         <div class="row align-items-center">
+             <div class="col-lg-1">
+            </div>
+            <div class="col-lg-8 offset-lg-1">
+               <form>
+                  <div class="mb-3">
+                    <small>Name</small>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                     <small>Email</small>
+                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                   </div>
+                   <div class="mb-3">
+                     <small>Help</small>
+                     <textarea name="" id="" cols="30" rows="4" class="form-control"></textarea>
+                   </div>
+                  <button type="submit" class="btn btn-brand">Submit</button>
+                </form>
+            </div>
+         </div>
+      </div>
+   </section>
+
+      <section class="py-5" data-aos="fade-up" style="background-color: #E93B81;margin-top: 100px;">
+      <div class="container py-4">
+         <div class="row justify-content-center">
+            <div class="col-md-6">
+               <h3 class="text-white h-6">Let's build something great.</h3>
+            </div>
+            <div class="col-auto">
+               <a href="#" class="btn btn-light">Get Started</a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <footer data-aos="fade-up">
+      <div class="footer-top">
+         <div class="container">
+            <div class="row gy-5">
+               <div class="col-md-4">
+                  <h4 class="logo-text">Vamsi</h4>
+                  <p>Praesent vulputate neque nec sem fermentum porttitor. Mauris eget dolor convallis, trista, dignissim sapien. Duis vel felis dictu</p>
+                  <div class="social-icons">
+                     <a href="#"><i class="bx bxl-facebook"></i></a>
+                     <a href="#"><i class="bx bxl-twitter"></i></a>
+                     <a href="#"><i class="bx bxl-instagram"></i></a>
+                     <a href="#"><i class="bx bxl-github"></i></a>
+                  </div>
+               </div>
+               <div class="col-md-2">
+                  <h5 class="title-sm">Navigation</h5>
+                  <div class="footer-links">
+                     <a href="#">Services</a>
+                     <a href="#">Our Work</a>
+                     <a href="#">Team</a>
+                     <a href="#">Blog</a>
+                  </div>
+               </div>
+               <div class="col-md-2">
+                  <h5 class="title-sm">More</h5>
+                  <div class="footer-links">
+                     <a href="#">FAQ's</a>
+                     <a href="#">Privacy & Policy</a>
+                     <a href="#">Liscences</a>
+                  </div>
+               </div>
+               <div class="col-md-2">
+                  <h5 class="title-sm">Contact</h5>
+                  <div class="footer-links">
+                     <p class="mb-">+91 75695 13935</p>
+                     <p class="mb">vamsibommu64@gmail.com</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footer-bottom">
+         <div class="container">
+            <div class="row justify-content-between gy-3">
+               <div class="col-md-6">
+                  <p class="mb-0">©Agency Vamsi, All rights reserved</p>
+               </div>
+               <div class="col-auto">
+                  <p class="mb-0">Created with ❤️ by Vamsi</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+</body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+    let typed = new Typed(".auto-input", {
+      strings: ["VAMSI"],
+      typeSpeed: 100,
+      backSpeed: 100,
+      loop: true
+    })
+
+    AOS.init({
+      easing: 'ease-out-back',
+      duration:1000,
+    });
+  </script>
+</html>
